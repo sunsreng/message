@@ -1,0 +1,16 @@
+E:\Dev\01_dotnet-ng4\backend\bin\Debug\netcoreapp1.1\backend.deps.json
+E:\Dev\01_dotnet-ng4\backend\bin\Debug\netcoreapp1.1\backend.runtimeconfig.json
+E:\Dev\01_dotnet-ng4\backend\bin\Debug\netcoreapp1.1\backend.runtimeconfig.dev.json
+E:\Dev\01_dotnet-ng4\backend\bin\Debug\netcoreapp1.1\backend.dll
+E:\Dev\01_dotnet-ng4\backend\bin\Debug\netcoreapp1.1\backend.pdb
+E:\Dev\01_dotnet-ng4\backend\obj\Debug\netcoreapp1.1\backend.AssemblyInfo.cs
+E:\Dev\01_dotnet-ng4\backend\obj\Debug\netcoreapp1.1\backend.dll
+E:\Dev\01_dotnet-ng4\backend\obj\Debug\netcoreapp1.1\backend.pdb
+E:\10_Dev\04_message\message-backend\bin\Debug\netcoreapp1.1\backend.deps.json
+E:\10_Dev\04_message\message-backend\bin\Debug\netcoreapp1.1\backend.runtimeconfig.json
+E:\10_Dev\04_message\message-backend\bin\Debug\netcoreapp1.1\backend.runtimeconfig.dev.json
+E:\10_Dev\04_message\message-backend\bin\Debug\netcoreapp1.1\backend.dll
+E:\10_Dev\04_message\message-backend\bin\Debug\netcoreapp1.1\backend.pdb
+E:\10_Dev\04_message\message-backend\obj\Debug\netcoreapp1.1\backend.AssemblyInfo.cs
+E:\10_Dev\04_message\message-backend\obj\Debug\netcoreapp1.1\backend.dll
+E:\10_Dev\04_message\message-backend\obj\Debug\netcoreapp1.1\backend.pdb
