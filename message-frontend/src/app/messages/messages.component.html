@@ -1,3 +1,12 @@
-<p>
-  messages works!
-</p>
+<md-card *ngFor="let message of messages; let i = index">
+  <md-card-title>{{ message.owner }}</md-card-title>
+  <md-card-content>
+    <p>
+      {{ message.text }}
+    </p>
+  </md-card-content>
+  <md-card-actions>
+    <button md-button>LIKE</button>
+    <button md-button>SHARE</button>
+  </md-card-actions>
+</md-card>

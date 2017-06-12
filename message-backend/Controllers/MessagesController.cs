@@ -6,11 +6,16 @@ namespace backend.Controllers {
     [Produces("application/json")]
     [Route("api/Messages")]
     public class MessagesController : Controller {
-        public IEnumerable<Message> Get() {
-            return new Message[] { 
+        static List<Message> messages = new List<Message> { 
                 new Message { Owner = "Time", Text = "First Message"},
                 new Message { Owner = "John", Text = "Second Message"}
             };
+        public IEnumerable<Message> Get() {
+            return messages;
+        }
+        [HttpPost]
+        public void Post([FromBody] Message message) {
+            messages.Add(message);
         }
     }
 }

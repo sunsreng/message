@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MessagesService } from "app/messages/messages.service";
 
 @Component({
   selector: 'app-messages',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./messages.component.css']
 })
 export class MessagesComponent {
-  messages = [{text: 'some text', owner: 'Tim'},{text: 'second message', owner: 'John'}];
+  constructor(private messagesService: MessagesService) {}
+
+  async ngOnInit() {
+    var response = await this.messagesService.getMessages();
+    this.messages = response.json();
+  }
+
+  messages = [];
 }

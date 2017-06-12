@@ -1,12 +1,18 @@
-import { Component } from '@angular/core';
-import { Http } from '@angular/http';
+import { Component, ViewChild } from '@angular/core';
+// import { Http } from '@angular/http';
 import { MessagesComponent } from './messages/messages.component';
+import { MessageNewComponent} from './message-new/message-new.component';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
-  messages = [{text: 'some text', owner: 'Tim'},{text: 'second message', owner: 'John'}];
+  @ViewChild(MessagesComponent) messages : MessagesComponent
+
+  onPosted(message) {
+    this.messages.messages.push(message);
+  }
 }
