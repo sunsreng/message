@@ -8,11 +8,4 @@ import { MessagesService } from "app/messages/messages.service";
 })
 export class MessagesComponent {
   constructor(private messagesService: MessagesService) {}
-
-  async ngOnInit() {
-    var response = await this.messagesService.getMessages();
-    this.messages = response.json();
-  }
-
-  messages = [];
 }
