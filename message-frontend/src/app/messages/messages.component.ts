@@ -11,7 +11,6 @@ export class MessagesComponent {
   constructor(private messagesService: MessagesService, private route: ActivatedRoute) {}
 
   ngOnInit() {
-    console.log(this.route.snapshot.params.name);
     var user = this.route.snapshot.params.name;
     this.messagesService.getMessages(user);
   }
