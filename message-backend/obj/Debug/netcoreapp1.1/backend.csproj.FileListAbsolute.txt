@@ -22,3 +22,6 @@ E:\Dev\01_Message\message-backend\bin\Debug\netcoreapp1.1\backend.pdb
 E:\Dev\01_Message\message-backend\obj\Debug\netcoreapp1.1\backend.AssemblyInfo.cs
 E:\Dev\01_Message\message-backend\obj\Debug\netcoreapp1.1\backend.dll
 E:\Dev\01_Message\message-backend\obj\Debug\netcoreapp1.1\backend.pdb
+E:\10_Dev\04_message\message-backend\bin\Debug\netcoreapp1.1\Microsoft.DiaSymReader.Native.x86.dll
+E:\10_Dev\04_message\message-backend\bin\Debug\netcoreapp1.1\Microsoft.DiaSymReader.Native.amd64.dll
+E:\10_Dev\04_message\message-backend\bin\Debug\netcoreapp1.1\Microsoft.DiaSymReader.Native.arm.dll
