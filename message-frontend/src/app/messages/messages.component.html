@@ -1,5 +1,5 @@
 <md-card *ngFor="let message of messagesService.messages; let i = index">
-  <md-card-title>{{ message.owner }}</md-card-title>
+  <md-card-title [routerLink]="['/messages',message.owner]" style="cursor: pointer">{{ message.owner }}</md-card-title>
   <md-card-content>
     <p>
       {{ message.text }}

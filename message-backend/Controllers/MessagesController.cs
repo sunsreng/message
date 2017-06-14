@@ -13,6 +13,10 @@ namespace backend.Controllers {
         public IEnumerable<Message> Get() {
             return messages;
         }
+        [HttpGet("{name}")]
+        public IEnumerable<Message> Get(string name) {
+            return messages.FindAll(message => message.Owner == name);
+        }
         [HttpPost]
         public Message Post([FromBody] Message message) {
             messages.Add(message);

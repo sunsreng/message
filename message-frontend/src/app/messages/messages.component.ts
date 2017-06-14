@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { MessagesService } from "app/messages/messages.service";
+import { ActivatedRoute } from "@angular/router";
 
 @Component({
   selector: 'app-messages',
@@ -7,5 +8,11 @@ import { MessagesService } from "app/messages/messages.service";
   styleUrls: ['./messages.component.css']
 })
 export class MessagesComponent {
-  constructor(private messagesService: MessagesService) {}
+  constructor(private messagesService: MessagesService, private route: ActivatedRoute) {}
+
+  ngOnInit() {
+    console.log(this.route.snapshot.params.name);
+    var user = this.route.snapshot.params.name;
+    this.messagesService.getMessages(user);
+  }
 }

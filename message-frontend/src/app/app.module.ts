@@ -13,10 +13,11 @@ import { MessageNewComponent } from './message-new/message-new.component';
 import { NavComponent } from './nav/nav.component';
 import { HomeComponent } from './home/home.component';
 
-var routes = [{
-  path: '',
-  component: HomeComponent
-}];
+var routes = [
+  { path: '', component: HomeComponent },
+  { path: 'messages', component: MessagesComponent },
+  { path: 'messages/:name', component: MessagesComponent }
+];
 
 @NgModule({
   declarations: [
