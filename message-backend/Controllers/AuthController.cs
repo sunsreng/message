@@ -13,6 +13,7 @@ namespace backend.Controllers {
         }
         public class JwtPacket {
             public string Token { get; set; }
+            public string FirstName { get; set; }
         }
         [HttpPost("register")]
         public JwtPacket Register([FromBody] User user) {
@@ -20,7 +21,7 @@ namespace backend.Controllers {
             var encodedJwt = new JwtSecurityTokenHandler().WriteToken(jwt);
             context.Users.Add(user);
             context.SaveChanges();
-            return new JwtPacket() { Token = encodedJwt };
+            return new JwtPacket() { Token = encodedJwt, FirstName =  user.firstName };
         }
     }
 }
