@@ -14,13 +14,15 @@ import { NavComponent } from './nav/nav.component';
 import { HomeComponent } from './home/home.component';
 import { RegisterComponent } from './register/register.component';
 import { AuthService } from "app/auth.service";
+import { LoginComponent } from './login/login.component';
 
 var routes = [
   { path: '', component: HomeComponent },
   { path: 'messages', component: MessagesComponent },
   { path: 'messages/:name', component: MessagesComponent },
   { path: 'register', component: RegisterComponent },
-  { path: 'auth', component: RegisterComponent }
+  { path: 'auth', component: RegisterComponent },
+  { path: 'login', component: LoginComponent }
 ];
 
 @NgModule({
@@ -30,7 +32,8 @@ var routes = [
     MessageNewComponent,
     NavComponent,
     HomeComponent,
-    RegisterComponent
+    RegisterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

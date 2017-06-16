@@ -53,6 +53,7 @@ namespace backend
         public void SeedData(ApiContext context) {
             context.Messages.Add(new Message { Owner = "Time", Text = "First Message"});
             context.Messages.Add(new Message { Owner = "John", Text = "Second Message"});
+            context.Users.Add(new User {email="sreng", firstName="sreng", password="sreng"});
             context.SaveChanges();
         }
     }

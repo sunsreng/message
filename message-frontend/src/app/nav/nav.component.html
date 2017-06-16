@@ -3,8 +3,10 @@
   <span class="example-spacer"></span>
   <button md-button routerLink="/"><md-icon>home</md-icon></button>
   <button md-button routerLink="/messages"><md-icon>message</md-icon></button>
-  <button md-button routerLink="/register"><md-icon>person_add</md-icon></button>
   <span class="example-spacer"></span>
+  <button md-button routerLink="/register" *ngIf="!auth.isAuthenticated"><md-icon>person_add</md-icon> Register</button>
+  <button md-button routerLink="/login" *ngIf="!auth.isAuthenticated"><md-icon>verified_user</md-icon> Login</button>
+  <button md-button (click)="auth.logOut()" *ngIf="auth.isAuthenticated"><md-icon>exit_to_app</md-icon> Logout</button>
   <button md-button [mdMenuTriggerFor]="menu" *ngIf="auth.isAuthenticated"><md-icon>account_circle</md-icon> {{ auth.name | uppercase }}</button>
 </md-toolbar>
 

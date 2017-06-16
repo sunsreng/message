@@ -1,0 +1,13 @@
+<md-card>
+  <!--<form class="example-form" [formGroup]="form">-->
+    <p>
+      <md-input-container class="example-full-width">
+        <input type="email" mdInput [(ngModel)]="loginData.email" placeholder="Email">
+      </md-input-container>
+      <md-input-container class="example-full-width">
+        <input type="password" mdInput [(ngModel)]="loginData.password" placeholder="Password">
+      </md-input-container>
+    </p>
+    <button md-raised-button color="primary" (click)="logIn()">Login</button>
+  <!--</form>-->
+</md-card>
